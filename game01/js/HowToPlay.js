@@ -9,6 +9,9 @@ myGame.HowToPlay.prototype={
 		// This is for creating a button so the player can click on it to switch states back to the game screen.
 		button=this.game.add.button(30, 9,'BackArrow', actionOnClick);
 		button.scale.setTo(2, 2);
+	        
+		//This is an intentional conflict
+		button.scale.setTo(3,2);
 		
 	 // This is a click function so that what the button is clicked, the player will go to the Main Menu.
      function actionOnClick(){
